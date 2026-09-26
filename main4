@@ -1,0 +1,40 @@
+class Addition {
+
+    int add(int a, int b) {
+        return a + b;
+    }
+}
+
+class Subtraction extends Addition {
+
+    int subtract(int a, int b) {
+        return a - b;
+    }
+}
+
+class Multiplication extends Subtraction {
+
+    int multiply(int a, int b) {
+        return a * b;
+    }
+}
+
+class Division extends Multiplication {
+
+    int divide(int a, int b) {
+        return a / b;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Division calculator = new Division();
+
+        System.out.println("Addition: " + calculator.add(10, 5));
+        System.out.println("Subtraction: " + calculator.subtract(10, 5));
+        System.out.println("Multiplication: " + calculator.multiply(10, 5));
+        System.out.println("Division: " + calculator.divide(10, 5));
+    }
+}
