@@ -1,0 +1,20 @@
+class Volume {
+
+    private double length;
+    private double breadth;
+    private double height;
+    private double radius;
+
+    public void setCuboid(double length, double breadth, double height) {
+        this.length = length;
+        this.breadth = breadth;
+        this.height = height;
+    }
+
+    public void setCylinder(double radius, double height) {
+        this.radius = radius;
+        this.height = height;
+    }
+
+    public double getCuboidVolume() {
+        return 
